@@ -1,0 +1,32 @@
+.content{
+  margin-top: 5%;
+}
+.eat-list{
+  width: 80%;
+  margin: auto;
+}
+img{
+  object-fit: cover;
+  height: 100px;
+  width: 170px;
+}
+h4{
+  background-color: rgb(32, 81, 103);
+  color: aliceblue;
+  padding: 6px;
+  border-radius: 50px;
+}
+@media (max-width: 740px) {
+  .eat-list{
+    margin-top: 10%;
+  }
+  .col-md-2{
+    width: 43%;
+  }
+  img{
+    width: 130px;
+  }
+  .col-md-7{
+    width: 55%;
+  }
+}

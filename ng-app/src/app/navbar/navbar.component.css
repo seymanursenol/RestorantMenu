@@ -1,0 +1,56 @@
+.nav{
+  background-color: rgb(32, 81, 103);
+  font-size: 15px;
+  padding: 1%;
+  position: fixed; /* Navbar'ı sabit yapar */
+  top: 0; /* Sayfanın en üst kısmında konumlandırır */
+  left: 0; /* Sol kenar ile hizalar */
+  right: 0; /* Sağ kenar ile hizalar */
+  z-index: 1000; /* Diğer içeriklerin üzerinde görünmesini sağlar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+.nav-item{
+  margin-left: auto;
+  margin-right: auto;
+}
+.link-group{
+  margin-left: 20px;
+  color: azure;
+  text-decoration: none;
+}
+.link-group:hover{
+  text-decoration: overline;
+}
+a:visited{
+  text-decoration: overline;
+}
+/* Mobil aygıtlar için */
+@media (max-width: 740px) {
+  .nav {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .eat-list {
+    padding: 10px;
+  }
+  .link-group{
+    margin-left: 5px;
+    color: azure;
+    text-decoration: none;
+  }
+  .link-group:hover{
+    text-decoration: overline;
+  }
+  a:visited{
+    text-decoration: overline;
+  }
+  .col-md-2, .col-md-7 {
+    flex: 100%; /* Tüm sütunlar tam genişlikte olsun */
+    max-width: 100%; /* Max genişliği %100 yapın */
+  }
+  img {
+    width: 100%; /* Resimlerin genişliğini %100 yapın */
+    height: auto; /* Yüksekliği otomatik ayarlayın */
+  }
+}
